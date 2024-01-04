@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SerialNo</string>
+    <string name="sn_name">SN:</string>
+    <string name="eth0_mac_name">Eth Mac:</string>
+</resources>

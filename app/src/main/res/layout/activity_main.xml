@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sn_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sn_name"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/serial_no_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Read SN"
+        app:layout_constraintTop_toBottomOf="@id/sn_review" />
+
+
+    <EditText
+        android:id="@+id/et_input_sn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="input serial number"
+        app:layout_constraintTop_toBottomOf="@+id/serial_no_read"
+        />
+
+    <Button
+        android:id="@+id/serial_no_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Write SN"
+        app:layout_constraintTop_toBottomOf="@id/et_input_sn" />
+
+    <TextView
+        android:id="@+id/mac_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eth0_mac_name"
+        app:layout_constraintTop_toBottomOf="@id/serial_no_write"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/mac_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Read Mac"
+        app:layout_constraintTop_toBottomOf="@id/mac_review" />
+
+
+    <EditText
+        android:id="@+id/et_input_mac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="input mac"
+        app:layout_constraintTop_toBottomOf="@+id/mac_read"
+        />
+
+    <Button
+        android:id="@+id/mac_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Write Mac"
+        app:layout_constraintTop_toBottomOf="@id/et_input_mac" />
+
+
+</android.support.constraint.ConstraintLayout>
